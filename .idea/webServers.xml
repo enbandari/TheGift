@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="3aaa772e-8485-4810-af11-f84669dbb714" name="amazon" url="http://ec2-54-200-60-103.us-west-2.compute.amazonaws.com">
+        <fileTransfer host="ec2-54-200-60-103.us-west-2.compute.amazonaws.com" port="22" privateKey="$USER_HOME$/.ssh/bennyhuo.pem" rootFolder="/var/www/html" accessType="SFTP" username="ubuntu" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="fdf32113-6665-46d1-b6c7-6e43a43bc5b9" name="local" url="http://localhost">
+        <fileTransfer port="0" mountedRoot="/Library/WebServer/Documents" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
